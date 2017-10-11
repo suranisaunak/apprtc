@@ -39,7 +39,7 @@ before_script:
   - pulseaudio --start
 
 script:
-  - grunt --verbose
+  - ./node_modules/.bin/grunt  --verbose
 
 notifications:
   email:
