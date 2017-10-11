@@ -1,7 +1,6 @@
 dist: trusty
-language: node_js
-node_js:
-  - 6
+language: python
+python: 2.7.13
 
 cache:
   directories:
@@ -29,6 +28,9 @@ matrix:
 
   allow_failures:
     - env: BROWSER=chrome  BVER=unstable
+
+before_install:
+  - nvm install 6
 
 before_script:
   - npm install
